@@ -33,7 +33,7 @@
         top: 8%;
     }
     main > section#apresentacao > div#apresentacao-central > div#apresentacao > h1 {
-        font-size: calc(38pt + 1vw);
+        font-size: calc(38pt + .5vw);
         text-align: center;
         padding: 10px;
         margin: auto;
@@ -43,17 +43,28 @@
         width: calc(150px + 20vw);
         margin: auto;
         text-align: center;
+        line-height: 100%;
     }
     div#servicos > p {
-        font-size: 3vw;
+        font-size: 2.5vw;
+        box-sizing: border-box;
         margin: auto;
         padding: 26px;
         text-align: center;
+        max-height: 20%;
     }
 }
 @media screen and (min-width: 1502px){
     main > section#apresentacao {
         background-size: contain, contain, cover;
 
+    }
+}
+@media screen and (min-width: 2186px) {
+    div#apresentacao > p#apresentacao {
+        font-size: 42px;
+    }
+    div#servicos > p {
+        font-size: 54px;
     }
 }
