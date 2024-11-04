@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 1024px) {
     ul#ul-menu {
-        right: 15%;
+        right: 10vw;
         transform: translate(0%);
         transition: .2s;
     }
@@ -20,8 +20,7 @@
         text-decoration: none;
     }
     img#silverio-ir-logo {
-        /*left: 27.5vw;*/
-        transform: translate(-150%, 0%);
+        left: 27.5vw;
         transition: .2s;
     }
 
@@ -66,5 +65,11 @@
     }
     div#servicos > p {
         font-size: 54px;
+    }
+    img#silverio-ir-logo {
+        left: 10vw;
+    }
+    ul#ul-menu {
+        right: 10vw;
     }
 }
