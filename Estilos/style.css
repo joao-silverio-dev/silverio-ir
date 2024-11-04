@@ -4,6 +4,10 @@
 *   
 *   
 */  
+* {
+    padding: 0px;
+    margin: 0px;
+}
 
 body {
     background-color: gray;
@@ -78,28 +82,45 @@ main > section#apresentacao {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5) inset;
     transition: .5s;
 }
-main > section#apresentacao > div#apresentacao > h1 {
+div#apresentacao-central {
+    position: absolute;
+    top: 15%;
+}
+section#apresentacao > div#apresentacao-central > div#apresentacao {
+    transform: translate(21.5%, 10%);
+    background-color: white;
+    width: calc(45vw + 10px);
+    padding: 5px;
+    border-radius: 5px 20px;
+    box-shadow: 0px 1px 10px white;
+
+}
+section#apresentacao > div#apresentacao-central > div#apresentacao:hover {
+    box-shadow: 0px 1px 30px white;
+    transition: .2s;
+}
+main > section#apresentacao > div#apresentacao-central > div#apresentacao > h1 {
+    font-size: calc(10pt + 2vw);
     margin: auto;
-    padding-top: 50px;
-    font-size: calc(32pt + 1vw);
-    color: white;
-    text-shadow: 0px 0px 10px black;
+    color: black;
     text-align: center;
+    font-weight: bolder;
 }
 p#apresentacao {
-    color: white;
-    font-size: 4vw;
-    width: 70vw;
-    margin-left: calc(10vw + 30px);
-    text-shadow: 0px 0px 10px black;
+    color: black;
+    font-size: 3.5vw;
+    width: 38vw;
+    margin: auto;
+    padding-bottom: 15px;
     overflow-block: hidden;
     text-align: center;
+    font-weight: 300;
 }
 div#servicos {
     background-color: white;
     width: 45vw;
     padding: 10px;
-    margin-left: 10%;
+    transform: translate(21.5%, 10%);
     margin-top: 100px;
     border-radius: 5px 20px;
     box-shadow: 0px 1px 10px white;
@@ -110,24 +131,25 @@ div#servicos:hover {
 }
 
 div#servicos > p {
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin: auto;
     padding: 26px;
     text-align: center;
 }
 div#servicos > ul#servicos {
-    width: calc(45vw - 20px);
-    margin-left: -10px;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
 }
 div#servicos > ul#servicos > li {
+    margin: auto;
     background-color: rgba(243, 124, 26, 1);
     color: white;
     text-align: center;
     border-radius: 5px;
     padding: 10px;
-    margin-left: -30px;
     margin-top: 10px;
-    width: 100%;
+    width: calc(92% + 1vw);
     transition: .2s;
 }
 div#servicos > ul#servicos > li:hover {

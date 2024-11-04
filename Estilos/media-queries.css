@@ -28,17 +28,27 @@
     main > section#apresentacao {
         background-size: 40vw, contain, cover;
     }
-    main > section#apresentacao > div#apresentacao > h1 {
+    div#apresentacao-central {
+        position: absolute;
+        top: 8%;
+    }
+    main > section#apresentacao > div#apresentacao-central > div#apresentacao > h1 {
         font-size: calc(38pt + 1vw);
-        text-align: left;
-        margin-left: calc(10vw - 30px);
+        text-align: center;
+        padding: 10px;
+        margin: auto;
     }
     p#apresentacao {
-        color: white;
-        font-size: calc(20pt + 1vw);
-        width: calc(200px + 20vw);
-        margin-left: calc(10vw + 30px);
-        text-align: left;
+        font-size: calc(16pt + 1vw);
+        width: calc(150px + 20vw);
+        margin: auto;
+        text-align: center;
+    }
+    div#servicos > p {
+        font-size: 3vw;
+        margin: auto;
+        padding: 26px;
+        text-align: center;
     }
 }
 @media screen and (min-width: 1502px){
