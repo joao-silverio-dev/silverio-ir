@@ -161,24 +161,3 @@ div#servicos > ul#servicos > a > li:hover {
     box-shadow: 0px 0px 5px black;
     cursor: pointer;
 }
-i#insta {
-    padding: 3px 6px 3px 6px;
-    background-image: linear-gradient(
-    to right,
-    #833ab4,#fd1d1d,#fcb045);
-    color: white;
-    border-radius: 25%;
-    position: absolute;
-    font-size: 48px;
-    transition: .5s;
-    margin: 1px;
-}
-i#insta:hover {
-    background-image: linear-gradient(
-    to right,
-    #833ab4,#fd1d1d,#fcb045);
-    background-clip: text;
-    color: transparent;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    transition: .5s;
-}
