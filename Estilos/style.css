@@ -64,7 +64,7 @@ span.material-symbols-outlined:hover {
 /* Seção de Apresentação*/
 
 main > section#apresentacao {
-    background-image: url(Clipped_image_20241104_001659.png), linear-gradient(rgba(243, 124, 26, 0.5), rgba(204, 103, 20, 0.75)), url(curiosidades-sobre-leao2.jpg);
+    background-image: url(../Imagens/Clipped_image_20241104_001659.png), linear-gradient(rgba(243, 124, 26, 0.5), rgba(204, 103, 20, 0.75)), url(../Imagens/curiosidades-sobre-leao2.jpg);
     background-repeat: no-repeat;
     background-position: bottom right, center center, center center;
     background-size: 30vw, contain, cover;
