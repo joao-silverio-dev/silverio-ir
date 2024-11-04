@@ -8,7 +8,7 @@
     }
     span.material-symbols-outlined {
         position: absolute;
-        transform: translate(500%);
+        transform: translate(800%);
         transition: .2s;
     }
     li {
@@ -26,6 +26,24 @@
     }
 
     main > section#apresentacao {
+        background-size: 40vw, contain, cover;
+    }
+    main > section#apresentacao > div#apresentacao > h1 {
+        font-size: calc(38pt + 1vw);
+        text-align: left;
+        margin-left: calc(10vw - 30px);
+    }
+    p#apresentacao {
+        color: white;
+        font-size: calc(20pt + 1vw);
+        width: calc(200px + 20vw);
+        margin-left: calc(10vw + 30px);
+        text-align: left;
+    }
+}
+@media screen and (min-width: 1502px){
+    main > section#apresentacao {
         background-size: contain, contain, cover;
+
     }
 }
