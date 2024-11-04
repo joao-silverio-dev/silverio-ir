@@ -81,6 +81,7 @@ main > section#apresentacao {
     height: 70vh;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5) inset;
     transition: .5s;
+    overflow-y: scroll;
 }
 div#apresentacao-central {
     position: absolute;
