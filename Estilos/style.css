@@ -23,6 +23,7 @@ header {
     position: fixed;
     top: 0;
     height: 100%;
+    display: flex;
 }
 body > header > menu#menu-tela {
     width: 98vw;
