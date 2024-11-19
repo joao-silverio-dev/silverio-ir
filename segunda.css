@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,7 +18,8 @@ header > menu#menu-tela {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    width: 100%;
 }
 
 nav#nav-menu > ul#ul-menu {
@@ -50,18 +52,39 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    overflow: scroll;
+    height: 90vh;
+    overflow-y: scroll;
+    box-shadow: inset 1px 1px 20px rgb(0, 0, 0);
 }
 
 div#apresentacao, div#servicos {
+    margin-top: 20vh;
     background-color: white;
-    text-align: justify;
-    padding: 40px;
+    max-width: 500px;
+    padding: 30px;
     margin: 20px;
     border-radius: 5px;
 }
 
+h1 {
+    font-size: 3vh;
+}
 p#apresentacao {
-    font-size: 20px;
+    font-size: 2vh;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2px;
+
+}
+footer > p {
+    font-size: 8pt;
 }
