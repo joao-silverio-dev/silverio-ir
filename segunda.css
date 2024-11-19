@@ -46,7 +46,7 @@ ul#ul-menu > li > a {
 
 
 main {
-    background-image: linear-gradient(rgba(243, 124, 26, 0.3), rgba(204, 103, 20, 0.5)), url(../Imagens/curiosidades-sobre-leao2.jpg);
+    background-image: linear-gradient(rgba(243, 124, 26, 0.3), rgba(204, 103, 20, 0.5)), url(Imagens/curiosidades-sobre-leao2.jpg);
     background-size: cover;
     background-position: center center;
     display: flex;
