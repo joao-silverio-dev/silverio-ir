@@ -46,7 +46,7 @@ ul#ul-menu > li > a {
 
 
 main {
-    background-image: url(../Imagens/curiosidades-sobre-leao2.jpg), linear-gradient(rgba(243, 124, 26, 0.3), rgba(204, 103, 20, 0.5));
+    background-image: linear-gradient(rgba(243, 124, 26, 0.3), rgba(204, 103, 20, 0.5)), url(../Imagens/curiosidades-sobre-leao2.jpg);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -61,18 +61,41 @@ div#apresentacao, div#servicos {
     margin-top: 20vh;
     background-color: white;
     max-width: 500px;
-    padding: 30px;
+    padding: 25px;
     margin: 20px;
     border-radius: 5px;
 }
 
 h1 {
-    font-size: 3vh;
+    font-size: clamp(1.5rem, 1.5vw + 0.6rem, 4rem);
+    padding: 10px;
 }
 p#apresentacao {
-    font-size: 2vh;
-    padding-top: 10px;
+    font-size: clamp(.5em, 1.2vw + 0.5rem, 2rem);
+    padding: 10px;
     text-align: justify;
+}
+
+ul#servicos {
+    list-style: none;
+    text-align: center;
+}
+ul#servicos > a{
+    text-decoration: none;
+}
+ul#servicos > a > li{
+    background-color: rgb(243, 124, 26);
+    font-size: clamp(.5em, 1.2vw + 0.5rem, 1.5em);
+    margin: 10px;
+    
+    padding: 7px 0px 7px 0px;
+    border-radius: 5px;
+    color: black;
+    transition: .2s;
+}
+ul#servicos > a > li:hover {
+    color: white;
+    transform: scale(105%);
 }
 
 footer {
