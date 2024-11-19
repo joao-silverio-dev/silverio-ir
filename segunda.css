@@ -93,11 +93,13 @@ ul#servicos > a > li{
     
     padding: 7px 0px 7px 0px;
     border-radius: 5px;
-    color: black;
+    color: white;
     transition: .2s;
 }
 ul#servicos > a > li:hover {
-    color: white;
+    color: rgb(243, 124, 26);
+    background-color: white;
+    border: 1px solid rgb(243, 124, 26);
     transform: scale(105%);
 }
 
@@ -110,13 +112,28 @@ section#sobre {
     align-items: center;
     padding: 20px;
 }
-section#sobre > h1 {}
-section#sobre > p {
+div#sobre {
+    background-color: white;
+    margin: 20px;
+    padding: 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+div#sobre > h1 {
+    background-color: black;
+    border-radius: 5px 5px 0px 0px;
+    padding: 15px;
+    padding-bottom: 20px;
+    color: white;
+    overflow: hidden;
+}
+div#sobre > p {
     width: 75vw;
-    max-width: 500px;
+    max-width: 600px;
     text-align: justify;
     line-height: 30px;
-    font-size: clamp(1em, 1.5vw, 1.2em);
+    font-size: clamp(1.5em, 1.3vw, 2em);
+    padding: 20px;
 }
 
 
