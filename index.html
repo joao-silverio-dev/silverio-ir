@@ -8,6 +8,7 @@
     <!---<link rel="stylesheet" href="Estilos/media-queries.css">-->
     <link rel="stylesheet" href="segunda.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -28,7 +29,8 @@
             <div id="apresentacao-central">
                 <div id="apresentacao">
                     <h1>CUIDADO COM O LEÃO!</h1>
-                    <p id="apresentacao">Não perca os prazos para entregar a declaração do imposto de renda 2023!</p>
+                    <p id="apresentacao">
+                        Não perca os prazos para entregar a declaração do imposto de renda 2023!</p>
                     <p id="apresentacao">O prazo vai de 15 de março até 31 de maio!</p>
                 </div>
                 <div id="servicos">
@@ -48,16 +50,189 @@
             <div id="sobre">
                 <h1>SOBRE:</h1>
                 <p>Somos uma organização que tem por objetivo assessorar e atender as suas necessidades em Declaração de Imposto de Renda Pessoa Física, em conjunto com a Renda Variável (Bolsa de Valores). Além disso realizamos o Acompanhamento Mensal Tributário de seus investimentos, com entrega da Lucratividade Mensal de suas Operações Finalizadas, e histórico de Lucros/Prejuízos. Visamos a redução direta de custos e maior lucratividade com os novos planejamentos gerenciais que permitam a tomada de decisões estratégicas.</p>
+                
             </div>
         </section>
-        <section id="precos">
-
+        <a onclick="toggleVisibility()" id="butao">Comparar Planos</a>
+        <section id="orcamento">
+            
+            <div id="tabela" style="display: none;">
+                <table id="comparacao-precos">
+                    <thead>
+                        <tr>
+                            <th>Características</th>
+                            <th>Júnior</th>
+                            <th>Pleno</th>
+                            <th>Sênior</th>
+                            <th>Master</th>
+                            <th>Prime</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Preenchimento e envio do IRPF (com 6 meses de contratação)</th>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Cálculo de IR com Darf mensal</th>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Importação Ilimitada de Notas de Corretagem</th>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Day-Trade</th>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Swing-Trade</th>
+                            <td><i class="em em-x" aria-role="presentation" aria-label="CROSS MARK"></i></td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Fundos de Investimentos Imobiliários (FII)</th>
+                            <td><i class="em em-x" aria-role="presentation" aria-label="CROSS MARK"></i></td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Investimentos no Exterior</th>
+                            <td><i class="em em-x" aria-role="presentation" aria-label="CROSS MARK"></i></td>
+                            <td><i class="em em-x" aria-role="presentation" aria-label="CROSS MARK"></i></td>
+                            <td><i class="em em-x" aria-role="presentation" aria-label="CROSS MARK"></i></td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Carnê-Leão</th>
+                            <td><i class="em em-x" aria-role="presentation" aria-label="CROSS MARK"></i></td>
+                            <td><i class="em em-x" aria-role="presentation" aria-label="CROSS MARK"></i></td>
+                            <td><i class="em em-x" aria-role="presentation" aria-label="CROSS MARK"></i></td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Conferência de lançamentos no IRPF dos últimos 5 anos</th>
+                            <td><i class="em em-x" aria-role="presentation" aria-label="CROSS MARK"></i></td>
+                            <td><i class="em em-x" aria-role="presentation" aria-label="CROSS MARK"></i></td>
+                            <td><i class="em em-x" aria-role="presentation" aria-label="CROSS MARK"></i></td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                            <td><i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Rendimentos Tributáveis</th>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>Ilimitado</td>
+                            <td>Ilimitado</td>
+                        </tr>
+                        <tr>
+                            <th>Custódias Permitidas</th>
+                            <td><i class="em em-x" aria-role="presentation" aria-label="CROSS MARK"></i></td>
+                            <td>15</td>
+                            <td>35</td>
+                            <td>70</td>
+                            <td>Ilimitado</td>
+                        </tr>
+                        <tr>
+                            <th>Rendimentos Isentos e Não Tributáveis (JSCP, Dividendos)</th>
+                            <td>10</td>
+                            <td>15</td>
+                            <td>40</td>
+                            <td>70</td>
+                            <td>Ilimitado</td>
+                        </tr>
+            
+                        <tr>
+                            <th>Bens/Direitos e Pagamentos Efetuados</th>
+                            <td>5</td>
+                            <td>10</td>
+                            <td>40</td>
+                            <td>50</td>
+                            <td>Ilimitado</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <th>Valor: </th>
+                        <td>R$ 74,90</td>
+                        <td>R$ 99,90</td>
+                        <td>R$ 139,90</td>
+                        <td>R$ 179,90</td>
+                        <td>R$ 499,99</td>
+                    </tfoot>
+                </table>
+            </div>
         </section>
     </main>
     <footer>
         <p>Todos os direitos reservados SilvérioIR - Contábil e Bolsa de Valores</p>
     </footer>
     <script>
+        function toggleVisibility() {
+            const element = document.getElementById('tabela');
+            if (element.style.display === 'none') {
+                element.style.display = 'block'; // Torna visível
+            } else {
+                element.style.display = 'none'; // Esconde
+            }
+        }
     </script>
   </body>
 </html>
