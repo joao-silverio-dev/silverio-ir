@@ -53,9 +53,51 @@
                 
             </div>
         </section>
-        <a onclick="toggleVisibility()" id="butao">Comparar Planos</a>
+        
         <section id="orcamento">
-            
+            <div id="planos">
+                <div id="plano-junior">
+                    <h1>Plano Júnior</h1>
+                    <p>Serviço de IR para Day-Trade: inclui cálculo mensal de DARF, importação de notas fiscais, lançamentos limitados e declaração de IR para contratos acima de 6 meses. Envio de documentos até dia 10.</p>
+                    <div class="saiba-mais-e-contratar">
+                        <a href="#" class="saibamais">SAIBA MAIS</a>
+                        <a href="#" class="contratar">CONTRATAR</a>
+                    </div>
+                </div>
+                <div id="plano-pleno">
+                    <h1>Plano Pleno</h1>
+                    <p>Serviço de IR para Day-Trade e Swing-Trade: inclui cálculo mensal de DARF, importação de notas fiscais, lançamentos limitados, e declaração de IR para contratos acima de 6 meses. Envio de documentos até dia 10.</p>
+                    <div class="saiba-mais-e-contratar">
+                        <a href="#" class="saibamais">SAIBA MAIS</a>
+                        <a href="#" class="contratar">CONTRATAR</a>
+                    </div>
+                </div>
+                <div id="plano-senior">
+                    <h1>Plano Sênior</h1>
+                    <p>Serviço de IR completo para Day-Trade e Swing-Trade: inclui cálculo mensal de DARF, importação de notas fiscais, lançamentos amplos e declaração de IR para contratos acima de 6 meses. Envio de documentos até dia 10.</p>
+                    <div class="saiba-mais-e-contratar">
+                        <a href="#" class="saibamais">SAIBA MAIS</a>
+                        <a href="#" class="contratar">CONTRATAR</a>
+                    </div>
+                </div>
+                <div id="plano-master">
+                    <h1>Plano Master</h1>
+                    <p>Serviço de IR completo para Day-Trade, Swing-Trade, Carnê-Leão e investimentos no exterior: inclui cálculo mensal de DARF, importação de notas fiscais, lançamentos amplos e declaração de IR para contratos acima de 6 meses. Envio de documentos até dia 10.</p>
+                    <div class="saiba-mais-e-contratar">
+                        <a href="#" class="saibamais">SAIBA MAIS</a>
+                        <a href="#" class="contratar">CONTRATAR</a>
+                    </div>
+                </div>
+                <div id="plano-prime">
+                    <h1>Plano Prime</h1>
+                    <p>Serviço de IR completo para operações na Bolsa e no exterior: inclui apurações mensais, lançamentos ilimitados, revisão de 5 anos no IRPF e entrega de DARFs. Envio de documentos até dia 10.</p>
+                    <div class="saiba-mais-e-contratar">
+                        <a href="#" class="saibamais">SAIBA MAIS</a>
+                        <a href="#" class="contratar">CONTRATAR</a>
+                    </div>
+                </div>
+            </div>
+            <a onclick="toggleVisibility()" id="butao">Comparar Planos</a>
             <div id="tabela" style="display: none; overflow-x: auto;">
                 <table id="comparacao-precos">
                     <thead>
@@ -227,8 +269,10 @@
     <script>
         function toggleVisibility() {
             const element = document.getElementById('tabela');
+            const botao = document.getElementById('butao');
             if (element.style.display === 'none') {
                 element.style.display = 'inline-block'; // Torna visível
+                botao.style.display = 'none';
             } else {
                 element.style.display = 'none'; // Esconde
             }
