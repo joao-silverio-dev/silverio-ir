@@ -144,7 +144,6 @@ div#sobre > p {
 section#orcamento {
     background-color: rgba(0, 0, 0, 0.483);
     padding: 20px;
-    overflow: scroll;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,6 +163,7 @@ section#orcamento > div > table {
     border-collapse: collapse;
     border-radius: 10px;
     min-width: 700px;
+    table-layout: fixed;
 }
 thead > tr > th {
     background-color: rgba(0, 0, 0, 0.7);
