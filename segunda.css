@@ -54,6 +54,7 @@ section#apresentacao {
     background-size: cover;
     background-position: center center;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     height: 90vh;
