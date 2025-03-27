@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-height: 900px) {
-    div#apresentacao > h1 {
-        background-color: red;
-    }
-}
+
 
 @media screen and (min-width: 1024px) {
     ul#ul-menu {
