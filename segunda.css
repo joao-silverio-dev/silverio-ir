@@ -141,14 +141,13 @@ div#sobre > p {
 
 section#orcamento {
     background-color: rgba(0, 0, 0, 0.483);
-    padding: 20px;
+    padding-top: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
 div#planos {
-    margin: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -159,10 +158,9 @@ div#plano-junior, div#plano-pleno, div#plano-senior, div#plano-master, div#plano
     justify-content: space-between;
     background-color: white;
     margin: 10px;
-    width: 40vw;
     min-width: 250px;
     max-width: 500px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     text-align: justify;
     overflow-y: scroll;;
