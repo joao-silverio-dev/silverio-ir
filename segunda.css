@@ -25,7 +25,6 @@ header > menu#menu-tela {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    overflow: hidden;
     border-radius: 10px;
     margin: 10px;
     box-shadow: 1px 2px 15px black;
@@ -33,7 +32,6 @@ header > menu#menu-tela {
 
 nav#nav-menu {
     height: 100%;
-    overflow: hidden;
     display: flex;
 }
 
@@ -95,7 +93,10 @@ section#apresentacao {
 
 div#apresentacao, div#servicos {
     margin-top: 20vh;
-    background-color: white;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    color: white;
     max-width: 500px;
     padding: 25px;
     margin: 20px;
@@ -144,9 +145,10 @@ section#sobre {
     align-items: center;
     padding: 20px;
     overflow: scroll;
+    background-color: white;
 }
 div#sobre {
-    background-color: white;
+    background-color: transparent;
     margin: 20px;
     padding: 0px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
